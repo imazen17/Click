@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عيد فطر مبارك</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Cairo', sans-serif;
+            background: linear-gradient(135deg, #FFDDC1, #FFABAB);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+            text-align: center;
+            animation: backgroundShift 8s infinite;
+        }
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+            font-weight: 700;
+            color: #333;
+            text-shadow: 2px 2px #fff;
+            animation: fadeIn 1.5s ease;
+        }
+        p {
+            font-size: 1.8rem;
+            margin: 10px 0;
+            font-weight: 400;
+            color: #444;
+            animation: fadeIn 2s ease;
+        }
+        .heart {
+            font-size: 6rem;
+            margin-top: 20px;
+            color: #FF6F61;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        @keyframes backgroundShift {
+            0%, 100% { background: linear-gradient(135deg, #FFDDC1, #FFABAB); }
+            50% { background: linear-gradient(135deg, #FFABAB, #FFDDC1); }
+        }
+        footer {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 1.2rem;
+            color: #666;
+            animation: fadeIn 3s ease;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 3rem;
+            }
+            p {
+                font-size: 1.3rem;
+            }
+            .heart {
+                font-size: 4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>عيد فطر مبارك!</h1>
+        <p>كل سنة وانت طيب يا أعظم أب في الدنيا ❤🎉</p>
+        <p>ربنا يحفظك ويديم عليك الصحة والعافية ويخليك لينا دايمًا.</p>
+        <p>. ربنا يبارك في عمر</p>
+        <p>ويارب يفضل وجودك نور في حياتنا ودايمًا في أحسن حال 🌟🎊</p>
+        <p class="heart">❤</p>
+    </div>
+    <footer>
+        <p>وجودك في حياتنا نعمة كبيرة، ربنا ما يحرمنا منك 🌟</p>
+    </footer>
+</body>
+</html>
